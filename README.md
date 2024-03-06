@@ -1,7 +1,5 @@
 # mernStack
 
-# LearningMERN
-
 MERN - MERN is multiple technologies <br />
 M - Stands for mongoDB <br />
 E - Stands for Express JS <br />
