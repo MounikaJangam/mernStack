@@ -58,3 +58,35 @@ Mongoose Connection
     ()=> console.log("DB Connected")
 )`
 
+=============================================
+Model
+-----------------------------------
+-> It is a schema for the database collection. <br />
+-> where we declared the collection name and type <br />
+
+`const mongoose = require('mongoose');`
+
+`const TaskSchema = new mongoose.Schema({
+    todo : {
+        type : String,
+        required : true
+    },
+    date : {
+        type : Date,
+        default : Date.now
+    }
+})`
+
+// this is to export the collection
+`module.exports = mongoose.model('TaskSchema', TaskSchema);`
+=======================================================================
+Running both front end and backend servers at a time 
+--------------------------------------------------------
+
+-> By making modifications in the script we can run both the servers at a time
+-> Modify the following at `package.json`
+
+    `"client" : "npm start --prefix client",`
+    `"dev" : "concurrently \"npm run server\" \"npm run client\" "`
+    
+------------------------------------------------------------
