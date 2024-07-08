@@ -58,7 +58,6 @@ Mongoose Connection
     ()=> console.log("DB Connected")
 )`
 
-=============================================
 Model
 -----------------------------------
 -> It is a schema for the database collection. <br />
@@ -78,8 +77,8 @@ Model
 })`
 
 // this is to export the collection
-`module.exports = mongoose.model('TaskSchema', TaskSchema);`
-=======================================================================
+`module.exports = mongoose.model('TaskSchema', TaskSchema);
+
 Running both front end and backend servers at a time 
 --------------------------------------------------------
 
